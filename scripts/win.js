@@ -1,8 +1,7 @@
-const GAME_ADDRESS = "0x";
+const GAME_ADDRESS = "";
 
 async function main() {
-  const Game = await hre.ethers.getContractFactory("Game");
-  const game = await Game.attach(GAME_ADDRESS);
+  const game = await hre.ethers.getContractAt("IGame", GAME_ADDRESS);
 
   const tx = await game.win();
   const receipt = await tx.wait();
