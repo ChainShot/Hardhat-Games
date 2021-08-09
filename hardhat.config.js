@@ -6,7 +6,7 @@ module.exports = {
   defaultNetwork: "rinkeby",
   networks: {
     rinkeby: {
-      url: process.env.INFURA_ROPSTEN_URL,
+      url: process.env.RINKEBY_URL,
       accounts: [process.env.PRIVATE_KEY]
     }
   }
