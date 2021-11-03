@@ -7,7 +7,7 @@ contract Game2 {
   event Winner(address winner);
 
   function win(uint8 x) public {
-    uint sum = x + y;
+    uint8 sum = x + y;
     require(sum == 10);
     emit Winner(msg.sender);
   }
