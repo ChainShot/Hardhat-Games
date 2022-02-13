@@ -2,12 +2,11 @@ require('dotenv').config();
 const ethers = require('ethers');
 
 async function main() {
-
-  // replace argument with the contract file you want to deploy!
+  // replace argument with the name of the contract you want to deploy!
   const Game = await hre.ethers.getContractFactory("Game1");
-  const gameNumber = 1;
+  // if you need to add constructor arguments for the game, add them here:
   const game = await Game.deploy();
-  console.log(`Game ${gameNumber} deployed to address: `, game.address);
+  console.log(`Game deployed to address: `, game.address);
 }
 
 main()
