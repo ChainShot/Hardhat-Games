@@ -1,6 +1,10 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.4;
 
+// have someone else deploy this contract
+// have them pass in a secret number to the constructor
+// then have them give you the deployed contract address
+
 contract Game4 {
   event Winner(address winner);
 

@@ -1,5 +1,4 @@
 require('dotenv').config();
-const ethers = require('ethers');
 
 async function main() {
   // replace argument with the name of the contract you want to deploy!
