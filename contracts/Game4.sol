@@ -23,7 +23,7 @@ contract Game4 {
     assembly {
       secret := sload(slot)
     }
-    require(guess == secret);
+    require(guess == secret, "Incorrect guess!");
     emit Winner(msg.sender);
   }
 }
