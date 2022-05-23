@@ -17,7 +17,7 @@ contract Game4 {
     }
   }
 
-  function win(uint guess) payable public {
+  function win(uint guess) public {
     uint secret;
     bytes32 slot = SECRET_SLOT;
     assembly {
